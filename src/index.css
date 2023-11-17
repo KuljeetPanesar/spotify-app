@@ -143,6 +143,7 @@ ul {
 }
 .card .img img {
   max-width: 250px;
+  max-height: 250px;
   transition: 0.8s ease-in-out;
 }
 .card:hover .img img {
@@ -160,6 +161,7 @@ ul {
   padding: 10px;
   color: rgb(46, 59, 46);
   margin-top: 20px;
+  max-width: 300px;
 }
 
 .card .details {
