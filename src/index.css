@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
+body {
+  margin: 0;
+  font-family: "Wix Madefor Display", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  margin: 5%;
+  font-size: 70px;
+  font-family: "Sigmar", sans-serif;
+}
+
+#login {
+  background-color: rgb(120, 217, 120);
+  padding: 10px, 15px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 5px solid transparent;
+}
+
+a {
+  text-decoration: none;
+  color: darkslategrey;
+  font-weight: 500;
+  transition: ease-in 0.3s;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+#logout {
+  background-color: lightcoral;
+  border: 1px solid transparent;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  transition: ease-in 0.3s;
+}
+
+#logout:hover {
+  background-color: rgb(151, 26, 26);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.search {
+  margin-bottom: 20px;
+}
+
+#search-bar,
+#search-button {
+  margin-left: 5px;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 15px;
+  -webkit-appearance: none;
+}
+
+#search-bar {
+  border: 1px solid lightgray;
+}
+
+#search-button {
+  background-color: darkgray;
+  border: 1px solid lightgray;
+  transition: ease-in 0.3s;
+}
+
+#search-button:hover {
+  background-color: #cfcfcf;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+.dots-7 {
+  width: 60px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  aspect-ratio: 4;
+  --_g: no-repeat radial-gradient(circle closest-side, #919191 90%, #91919100);
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 100%;
+  animation: d7 1s infinite linear;
+}
+@keyframes d7 {
+  33% {
+    background-size: calc(100% / 3) 0%, calc(100% / 3) 100%, calc(100% / 3) 100%;
+  }
+  50% {
+    background-size: calc(100% / 3) 100%, calc(100% / 3) 0%, calc(100% / 3) 100%;
+  }
+  66% {
+    background-size: calc(100% / 3) 100%, calc(100% / 3) 100%, calc(100% / 3) 0%;
+  }
+}
+
+.divider {
+  margin: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ////////////////////// */
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  background: #0000;
+  display: flex;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.card:hover {
+  width: 800px;
+}
+.card .img {
+  position: relative;
+  min-width: 300px;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.card .img img {
+  max-width: 250px;
+  transition: 0.8s ease-in-out;
+}
+.card:hover .img img {
+  transform: rotate(-10deg);
+}
+
+.card .artist-name {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  display: flex;
+  font-size: 30px;
+  font-weight: 900;
+  z-index: 20;
+  text-align: center;
+  padding: 10px;
+  color: rgb(46, 59, 46);
+  margin-top: 20px;
+}
+
+.card .details {
+  position: absolute;
+  left: 0;
+  width: 450px;
+  height: 100%;
+  background: #3b5b46;
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+.card:hover .details {
+  left: 300px;
+}
+.card .details::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff;
+  z-index: 1;
+}
+
+h3 {
+  text-align: center;
+  margin-left: 40px;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+p {
+  text-align: center;
+}
