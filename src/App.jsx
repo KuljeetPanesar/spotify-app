@@ -236,8 +236,5 @@ function App() {
 export default App;
 
 //only open the one card thats hovered on at a time
-// keep text small nd size of white section the same when expanded (for long artist names)
 
 // error handling -- when need to login
-
-// new app with bpm - tempo in api - showing tracks in existing library? or search for bpm for related tracks
